@@ -115,6 +115,7 @@ export const TokenReceiptModal: React.FC<TokenReceiptModalProps> = ({ caseData, 
               borderRadius: '8px',
               border: '1px solid #e2e8f0',
             }}
+            
           >
             <QrCode size={40} style={{ color: '#334155' }} />
             <div style={{ textAlign: 'left', fontSize: '0.75rem', color: '#64748b' }}>
