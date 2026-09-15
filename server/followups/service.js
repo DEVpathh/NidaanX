@@ -49,7 +49,7 @@ export function mountFollowups(app, { followups, patients, cases, persist, sms, 
         if (!sms.configured) { job.status = 'blocked'; persist(); continue }
         job.status = 'sending'; job.attempts += 1; persist()
         try {
-          const body = /Hindi|हिन्दी|हिंदी|^hi/i.test(job.language ?? '') ? 'आज आपका क्लिनिक फॉलो-अप है। कृपया अपनी रिपोर्ट साथ लाएं। - CareX' : 'Your clinic follow-up is today. Please bring your records. - CareX'
+          const body = /Hindi|हिन्दी|हिंदी|^hi/i.test(job.language ?? '') ? 'आज आपका क्लिनिक फॉलो-अप है। कृपया अपनी रिपोर्ट साथ लाएं। - NidaanX' : 'Your clinic follow-up is today. Please bring your records. - NidaanX'
           const result = await sms.send(patient.mobile, body)
           job.providerId = result.id; job.status = ['delivered','sent','failed','undelivered'].includes(result.status) ? result.status : 'accepted'; job.sentAt = now().toISOString()
         } catch (error) {

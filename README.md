@@ -1,6 +1,6 @@
-# CareX
+# NidaanX
 
-CareX is a Hindi-first, voice-assisted medical intake kiosk with a connected doctor and staff workspace.
+NidaanX is a Hindi-first, voice-assisted medical intake kiosk with a connected doctor and staff workspace.
 
 ## Run
 

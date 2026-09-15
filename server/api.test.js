@@ -19,7 +19,7 @@ const json = async (base, route, body, method = 'POST') => {
 
 test('configuration defaults to Hindi and starts with concern, without a welcome step', () => withServer(async base => {
   const { data } = await json(base, '/patient-experience', null, 'GET')
-  assert.equal(data.brand.name, 'Swasthya Setu')
+  assert.equal(data.brand.name, 'NidaanX')
   assert.equal(data.languages[0].locale, 'hi-IN')
   assert.equal(data.steps.includes('Welcome'), false)
 }))

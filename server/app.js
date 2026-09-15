@@ -31,7 +31,7 @@ import {
 import { BHASHINI_MODEL_REGISTRY, BHASHINI_PIPELINE_IDS } from './bhashiniConfig.js'
 
 const experience = {
-  brand: { name: 'Swasthya Setu', organisation: 'Your health, our care' },
+  brand: { name: 'NidaanX', organisation: 'Your health, our care' },
   languages: [{ label: 'हिन्दी', locale: 'hi-IN' }, { label: 'English', locale: 'en-IN' }],
   steps: ['Your concern', 'Patient details', 'Consent', 'Review'],
   identificationOptions: [
@@ -44,7 +44,7 @@ const experience = {
     { id: 'priorRecords', label: 'Allow my doctor to review earlier records, if available' },
     { id: 'careTeamSharing', label: 'Share my visit summary with the care team' },
   ],
-  welcome: { eyebrow: 'Swasthya Setu', title: 'हेलो, क्या समस्या है आपको?', description: '', prompt: 'हेलो, क्या समस्या है आपको?' },
+  welcome: { eyebrow: 'NidaanX', title: 'हेलो, क्या समस्या है आपको?', description: '', prompt: 'हेलो, क्या समस्या है आपको?' },
 }
 const envelope = data => ({ data, requestId: randomUUID(), timestamp: new Date().toISOString() })
 const isHindi = language => /हिन्दी|हिंदी|^hi|hindi/i.test(language ?? '')

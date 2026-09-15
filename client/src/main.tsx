@@ -60,7 +60,7 @@ function App() {
     <div {...(phase !== 'awake' ? { inert: '' } : {})} className={phase === 'awake' ? 'app-content awake' : 'app-content'}>
       <header className="app-header">
         <div className="header-inner">
-          <div className="brand-lockup"><BrandLogo ref={headerLogo}/><div><div className="brand-name">Care<span>X</span></div><p>{t('आपकी सेहत, हमारा साथ', 'Your health, our care')}</p></div></div>
+          <div className="brand-lockup"><BrandLogo ref={headerLogo}/><div><div className="brand-name">Nidaan<span>X</span></div><p>{t('आपकी सेहत, हमारा साथ', 'Your health, our care')}</p></div></div>
           <div className="header-tools">
 
             <label className="language-control"><Languages size={23}/><select aria-label="Language / भाषा" value={language} onChange={event => setLanguage(event.target.value)}><option value="हिन्दी">हिन्दी</option><option value="English">English</option></select></label>
