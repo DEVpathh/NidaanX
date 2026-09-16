@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node --env-file-if-exists=.env index.js",
     "dev": "node --env-file-if-exists=.env index.js",
-    "test": "node --test api.test.js records-followups.test.js visual-confidence.test.js"
+    "test": "node --test api.test.js records-followups.test.js visual-confidence.test.js bhashini-tts.test.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

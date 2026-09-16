@@ -329,6 +329,9 @@ export function getBhashiniServiceId(taskType, language = 'hi') {
     return BHASHINI_MODEL_REGISTRY.NMT.iiitAll.serviceId
   }
   if (taskType === 'TTS') {
+    // IITM drops the final syllable of the Hindi welcome's “आपको”.
+    // The Hindi-capable Indic voice preserves the complete question.
+    if (code === 'hi') return BHASHINI_MODEL_REGISTRY.TTS.indicTTSIndoAryan.serviceId
     return BHASHINI_MODEL_REGISTRY.TTS.iitmTTS.serviceId
   }
   if (taskType === 'Transliteration') {
